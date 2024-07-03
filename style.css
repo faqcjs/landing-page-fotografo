@@ -17,78 +17,54 @@
 }
 
 .text-carrusel span{
-    margin: 10px 0;  
+    margin: 0;  
 }
 
 .text-carrusel h1{
-    margin: 10px 0; 
+    margin-bottom: 20px;
 }
 
 .carousel-caption-static {
     position: absolute;
     top: 30%;
-    left: 40%;
+    left: 60%;
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: left;
   }
 
 .carousel-caption-static h1, .carousel-caption-static .badge, .carousel-caption-static .btn {
-    display: block;
-    margin-bottom: 10px;
-}
-
-
-.text-carrusel button{
     color: white;
-    margin: 10px 0; 
-    transition: all 0.2s ease-in;
-
+    display: block;
+    margin: 5px;
 }
 
-.text-carrusel button:hover{
+
+.carousel-caption-static button{
+    color: white;
+    transition: all 0.2s ease-in;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.carousel-caption-static button:hover{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
 
 @media screen and (max-width:765px) {
     .c-item{
-        height: 200px;
+        height: 300px;
     }
     
-    .carousel-caption-static {
-        top: 12%;
+    .carousel-caption-static{
+        top: 20%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        text-align: left;
+        margin-left: 50px;
     }
 
     .carousel-caption-static h1{
-        margin: 4px 0;
-        font-size: 1rem;
+        font-size: 20px;
     }
 
-    .carousel-caption-static .badge{
-        font-size: 0.6rem;
-        margin: 4px 0;
-    }
-
-    .carousel-caption-static button{
-        font-size: 0.8rem;
-        margin: 4px 0;
-        padding: 4px 8px;
-    }
-
-
-}
-
-@media screen and(min-width: 360px ) {
-    .carousel-caption-static {
-        top: 50%;
-        left: 70%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        text-align: left;
-    }
 }
