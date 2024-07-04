@@ -1,70 +1,14 @@
-.c-item{
-    height: 500px;
-    
-}
-
-.c-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover
-}
-
-
-.text-carrusel{
-    text-align: start;
-    margin-bottom: 50px;
-    color: white;
-}
-
-.text-carrusel span{
-    margin: 0;  
-}
-
-.text-carrusel h1{
-    margin-bottom: 20px;
-}
-
-.carousel-caption-static {
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    text-align: left;
+.hero-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  .portfolio-image {
+    transition: transform 0.3s ease;
+  }
+  .portfolio-image:hover {
+    transform: scale(1.05);
   }
 
-.carousel-caption-static h1, .carousel-caption-static .badge, .carousel-caption-static .btn {
-    color: white;
-    display: block;
-    margin: 5px;
-}
-
-
-.carousel-caption-static button{
-    color: white;
-    transition: all 0.2s ease-in;
-    font-weight: 500;
-    margin-top: 20px;
-}
-
-.carousel-caption-static button:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
-
-@media screen and (max-width:765px) {
-    .c-item{
-        height: 300px;
-    }
-    
-    .carousel-caption-static{
-        top: 20%;
-        left: 50%;
-        margin-left: 50px;
-    }
-
-    .carousel-caption-static h1{
-        font-size: 20px;
-    }
-
+.btn-fotos i{
+    font-size: 20px;
 }
